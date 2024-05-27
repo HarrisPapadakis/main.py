@@ -1,0 +1,15 @@
+#1st input: Enter height in meters e.g : 1.76
+#height = input()
+
+#2nd input: Enter weight in kilograms e.g : 85
+#weight = input()
+
+#For the BMI calculator the code below
+height_as_float = float(height)
+weight_as_int = int(weight)
+#using the exponent operator **
+bmi = weight_as_int / height_as_float **2
+
+bmi_as_int = int(bmi)
+print(bmi_as_int)
+
