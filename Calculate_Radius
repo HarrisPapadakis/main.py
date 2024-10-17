@@ -1,0 +1,12 @@
+def calculate_area_of_circle(radius):
+    """Υπολογισμός της επιφάνειας ενός κύκλου δεδομένης της ακτίνας"""
+    import math
+    if radius <= 0:
+        return "Η ακτίνα πρέπει να είναι θετικός αριθμός"
+    area = math.pi * radius ** 2
+    return f"Η επιφάνεια του κύκλου είναι: {area:.2f}"
+
+# Παράδειγμα χρήσης της συνάρτησης
+if __name__ == "__main__":
+    r = float(input("Δώσε την ακτίνα του κύκλου: "))
+    print(calculate_area_of_circle(r))
