@@ -1,0 +1,8 @@
+developer_name = input("Enter the developer's name: ")
+developer_role = input("Enter the developer's role: ")
+developer_experience = int(input("Enter the developer's years of experience: "))
+
+print("Developer Information:")
+print("Name:", developer_name)
+print("Role:", developer_role)
+print("Years of Experience:", developer_experience)
