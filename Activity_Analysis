@@ -1,0 +1,14 @@
+from collections import Counter
+
+weekly_tasks = {
+    'email': 40,
+    'meeting': 20,
+    'code': 60,
+    'documentation': 30,
+    'review': 50
+}
+
+top_tasks = Counter(weekly_tasks)
+top_three_tasks = top_tasks.most_common(3)
+
+print(top_three_tasks)
