@@ -1,0 +1,6 @@
+from collections import Counter
+
+preferences = ['dark_mode', 'light_mode', 'dark_mode', 'auto_mode', 'dark_mode', 'light_mode', 'auto_mode', 'dark_mode']
+preference_counter = Counter(preferences)
+
+print(preference_counter)
