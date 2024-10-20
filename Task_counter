@@ -1,0 +1,6 @@
+from collections import Counter
+
+daily_tasks = ['email', 'meeting', 'code', 'email', 'lunch', 'code']
+task_counter = Counter(daily_tasks)
+
+print(task_counter)
