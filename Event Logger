@@ -1,0 +1,6 @@
+from collections import Counter
+
+events = ['login', 'logout', 'login', 'data_change', 'login', 'logout']
+event_counter = Counter(events)
+
+print(event_counter)
