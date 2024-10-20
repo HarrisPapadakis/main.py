@@ -1,0 +1,6 @@
+from collections import Counter
+
+tags = ['bug', 'feature', 'bug', 'bug', 'improvement', 'bug']
+tag_counter = Counter(tags)
+
+print(tag_counter)
