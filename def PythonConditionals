@@ -1,0 +1,12 @@
+def PythonConditionals5(strParam):
+    # Check the length of the input string and return the appropriate response
+    length = len(strParam)
+    if length > 5:
+        return 'Long'
+    elif length < 5:
+        return 'Short'
+    else:
+        return 'Medium'
+
+# keep this function call here 
+print(PythonConditionals5(input()))
