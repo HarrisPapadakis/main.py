@@ -1,0 +1,14 @@
+from collections import Counter
+
+company_earnings = [
+    ('Apple', 150),
+    ('Google', 120),
+    ('Microsoft', 140),
+    ('Amazon', 160),
+    ('Facebook', 130)
+]
+
+earning_counter = Counter(dict(company_earnings))
+top_earning_company = earning_counter.most_common(1)
+
+print(top_earning_company)
