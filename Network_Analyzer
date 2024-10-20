@@ -1,0 +1,7 @@
+from collections import Counter
+
+interactions = ['Google', 'Apple', 'Microsoft', 'Google', 'Apple', 'Amazon']
+interaction_counter = Counter(interactions)
+most_frequent_interaction = interaction_counter.most_common(1)
+
+print(most_frequent_interaction)
