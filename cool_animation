@@ -1,0 +1,24 @@
+import time
+import os
+import math
+
+def clear_screen():
+    os.system('cls' if os.name == 'nt' else 'clear')
+
+def sine_wave_animation():
+    amplitude = 10
+    frequency = 0.1
+    width = 40
+
+    while True:
+        clear_screen()
+        for x in range(width):
+            y = int(amplitude * math.sin(frequency * x))
+            print(' ' * (amplitude + y) + '*')
+        time.sleep(0.1)
+
+if __name__ == "__main__":
+    try:
+        sine_wave_animation()
+    except KeyboardInterrupt:
+        print("\nAnimation stopped. Bye!")
