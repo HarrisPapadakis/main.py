@@ -1,14 +1,19 @@
 from collections import Counter
 
+# Dictionary representing the amount of time spent on each weekly task
 weekly_tasks = {
-    'email': 40,
-    'meeting': 20,
-    'code': 60,
-    'documentation': 30,
-    'review': 50
+    'email': 40,              # Hours spent on emails
+    'meeting': 20,            # Hours spent in meetings
+    'code': 60,               # Hours spent coding
+    'documentation': 30,      # Hours spent on writing or updating documentation
+    'review': 50              # Hours spent reviewing code or tasks
 }
 
+# Use Counter to identify and count tasks based on time
 top_tasks = Counter(weekly_tasks)
+
+# Retrieve the top 3 tasks with the highest time allocation
 top_three_tasks = top_tasks.most_common(3)
 
+# Print the result, showing the tasks and their respective times
 print(top_three_tasks)
