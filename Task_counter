@@ -1,6 +1,10 @@
 from collections import Counter
 
+# List of daily tasks containing several task types (with duplicates)
 daily_tasks = ['email', 'meeting', 'code', 'email', 'lunch', 'code']
+
+# Create a Counter object to count occurrences of each task in the list
 task_counter = Counter(daily_tasks)
 
+# Print the Counter, showing each task and how often it appears
 print(task_counter)
