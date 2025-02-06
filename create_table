@@ -1,0 +1,21 @@
+from rich.table import Table
+from rich.console import Console
+
+# Create a console object for output
+console = Console()
+
+# Create a table with a title
+table = Table(title="User Data")
+
+# Add columns to the table with alignment and styles
+table.add_column("ID", justify="right", style="cyan", no_wrap=True)
+table.add_column("Name", style="magenta")
+table.add_column("Age", justify="right", style="green")
+
+# Add rows of data to the table
+table.add_row("1", "Alice", "28")
+table.add_row("2", "Bob", "32")
+table.add_row("3", "Charlie", "22")
+
+# Print the formatted table to the console
+console.print(table)
